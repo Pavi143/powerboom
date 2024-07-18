@@ -5,21 +5,27 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import EmailIcon from '@mui/icons-material/Email';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import logo from '@/assets/logo.png';
 
 
 export default function Footer() {
     return (
        
-        <div className="flex flex-col w-full bg-blue-300">
-            <div className="flex flex-col ">
-                <div className='flex justify-center my-2'>
-                    <p >Follow us on</p>
+        <div className="flex flex-col w-full text-white">
+            <div className="flex  justify-around gap-4 my-4">
+                <div className='flex my-2'>
+                    <img src={logo.src} className='w-full object-contain'></img> 
                 </div>
-                {/* <div className='flex justify-center gap-4 py-2'>
-                    <Link href="/" underline="hover">Home</Link>
+                <div className='flex flex-col  gap-4 '>
                     <Link href="/about" underline="hover">About Us</Link>
                     <Link href="/contact" underline="hover">Contact Us</Link>
-                </div> */}
+                    <Link href="/" underline="hover">Products</Link>
+                </div>
+                <div className='flex flex-col  gap-4 '>
+                    <p className='text-sm'>TERMS & CONDITIONS</p>
+                    <p className='text-sm'>PRIVACY POLICY</p>
+                    <p className='text-sm'>STORE</p>
+                </div> 
                 <div className='flex justify-center gap-4 my-4'>
                     <Link href='https://www.instagram.com' underline="none"><InstagramIcon fontSize="small" /></Link>
                     <Link href='https://www.instagram.com' underline="none"><XIcon fontSize="small" /></Link>
@@ -29,9 +35,9 @@ export default function Footer() {
                 </div>
                 
             </div>
-            <div className='flex flex-col bg-blue-500 w-full'>
+            <div className='flex flex-col bg-sky-200 w-full text-black'>
                 <div className='flex flex-col my-4 justify-center items-center'>
-                    <p>Made with <span>&#x2764;</span> by Mockup can </p>
+                    <p>Made with <span>&#x2764;</span> by Powerboom </p>
                 </div>
             </div>
         </div>
